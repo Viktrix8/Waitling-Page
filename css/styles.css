@@ -71,3 +71,19 @@ a {
   text-align: center;
   padding: 2rem 0.5rem;
 }
+
+/* Header */
+
+.header {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 50%;
+}
+
+.header__hamburger {
+  width: 8%;
+}
