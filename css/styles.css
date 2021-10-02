@@ -1,0 +1,73 @@
+/* Basica */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Variables */
+
+:root {
+  --color-primary: #4c3688;
+  --color-secondary: #ecfcff;
+  --color-accent: #8b79d9;
+  --color-paragraph: #5c5c5c;
+  --heading-large-font-size: 2.75rem;
+  --paragraph-font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --heading-large-font-size: 3rem;
+    --paragraph-font-size: 1.5rem;
+  }
+}
+
+/* Typography */
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 0.8rem 1rem;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: var(--heading-large-font-size);
+  color: var(--color-accent);
+  margin: 0;
+}
+
+p,
+a {
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+  color: var(--color-paragraph);
+}
+
+/* Buttons */
+
+.btn {
+  width: 100%;
+  height: 50px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Card */
+
+.card {
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  height: calc(100vh - 2rem);
+  text-align: center;
+  padding: 2rem 0.5rem;
+}
